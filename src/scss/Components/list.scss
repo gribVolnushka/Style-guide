@@ -1,0 +1,28 @@
+.list-types {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.list-types__title {
+  font-size: 1.6rem;
+  line-height: calc(19 / 16);
+  font-weight: 700;
+  color: var(--color-title);
+  margin-bottom: 10px;
+}
+
+.list-types__unordered-list {
+  list-style: initial;
+  margin-bottom: 30px;
+}
+
+.list-types__item {
+  @include fonts-100();
+  font-weight: 500;
+  color: var(--main-black-color);
+}
+
+.list-types__ordered-list {
+  list-style: decimal;
+}
+
+

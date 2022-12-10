@@ -1,0 +1,90 @@
+.cases {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cases__list {
+  display: grid;
+  grid-template-columns: 24.34% 8.42% 26.19% 8.20% 32.78%;
+  grid-template-rows: 57px 198px 198px;
+  background-color: var(--background-color);
+  margin-bottom: 50px;
+}
+
+.cases__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #FFFFFF;
+
+  &:hover {
+    background-color: var(--background-alternative-color);
+  }
+}
+
+.cases__item:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.cases__item:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.cases__item:nth-child(3) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.cases__item:nth-child(4) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.cases__item:nth-child(5) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.cases__item:nth-child(6) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.cases__item:nth-child(7) {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 3;
+}
+
+.cases__item__title {
+  @include fonts-300();
+  font-weight: 700;
+  color: var(--accent-color);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cases__item-text {
+  @include fonts-400();
+  font-weight: 500;
+  color: var(--main-tertiary-color);
+}
+
+.cases__company-name {
+  @include fonts-100();
+  color: var(--background-text-color);
+}

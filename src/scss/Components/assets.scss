@@ -1,0 +1,17 @@
+.assets {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.assets__title {
+  font-size: 2.1rem;
+  line-height: calc(25 / 21);
+  font-weight: 700;
+  color: var(--color-title);
+}
+
+.assets__wrapper-image {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}

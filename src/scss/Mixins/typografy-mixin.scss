@@ -1,0 +1,29 @@
+@mixin fonts-100() {
+  font-size: 1.8rem;
+  line-height: calc(26 / 18)
+}
+
+@mixin fonts-200() {
+  font-size: 1.8rem;
+  line-height: calc( 21 / 18);
+}
+
+@mixin fonts-300() {
+  font-size: 1.4rem;
+  line-height: calc( 17 / 14);
+}
+
+@mixin  fonts-400() {
+  font-size: 2.4rem;
+  line-height: calc(28 / 24);
+}
+
+@mixin fonts-500() {
+  font-size: 3.2rem;
+  line-height: calc(38 / 32);
+}
+
+@mixin fonts-600() {
+  font-size: 4.2rem;
+  line-height: calc(50 / 42);
+}
