@@ -16,7 +16,19 @@
   flex-direction: column;
   gap: 21px;
   text-align: right;
-  border-right: 4px solid #FFFFFF;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 100%;
+    border-right: 4px solid var(--main-white-color);
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+
 }
 
 .experience__item {
@@ -29,11 +41,19 @@
     @include gradient-red-text();
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-right: 4px solid #F0145A;
   }
 
   &:active {
-    border-right: 4px solid #F0145A;
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 50px;
+      border-right: 4px solid var(--accent-color);
+      position: absolute;
+      right: 0;
+      z-index: 3;
+    }
   }
 }
 

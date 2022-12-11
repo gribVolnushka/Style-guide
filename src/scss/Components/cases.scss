@@ -6,7 +6,7 @@
 .cases__list {
   display: grid;
   grid-template-columns: 24.34% 8.42% 26.19% 8.20% 32.78%;
-  grid-template-rows: 57px 198px 198px;
+  grid-template-rows: 57px 198px 184px 198px;
   background-color: var(--background-color);
   margin-bottom: 50px;
 }
@@ -51,23 +51,32 @@
 }
 
 .cases__item:nth-child(5) {
-  grid-column-start: 1;
-  grid-column-end: 2;
   grid-row-start: 3;
-  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cases__item:nth-child(6) {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
 }
 
 .cases__item:nth-child(7) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.cases__item:nth-child(8) {
   grid-column-start: 4;
   grid-column-end: 6;
-  grid-row-start: 3;
+  grid-row-start: 4;
 }
 
 .cases__item__title {
@@ -82,6 +91,12 @@
   @include fonts-400();
   font-weight: 500;
   color: var(--main-tertiary-color);
+}
+
+.cases__item-text--hover {
+  @include fonts-100();
+  color: var(--main-black-color);
+  width: 67.6%;
 }
 
 .cases__company-name {
