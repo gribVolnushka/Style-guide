@@ -10,32 +10,31 @@
 </head>
 <body>
 
-<!--START SECTION TYPOGRAPHY-->
-
-<section class='typography'>
-
+<div class='elements'>
   <div class='container'>
-    <h1 class='typography__main-title'>
+
+    <!--    start typography-->
+    <h1 class='main-title'>
       Учись ради мечты!
     </h1>
 
-    <h2 class='typography__primary-title'>
+    <h2 class='primary-title'>
       Учись ради мечты!
     </h2>
 
-    <h3 class='typography__tertiary-title'>
+    <h3 class='tertiary-title'>
       Учись ради мечты!
     </h3>
 
-    <h3 class='typography__caps-title'>
+    <h3 class='caps-title'>
       Учись ради мечты!
     </h3>
 
-    <h4 class='typography__subtitle'>
+    <h4 class='subtitle'>
       10.03.2019
     </h4>
 
-    <p class='typography__paragraph'>
+    <p class='paragraph'>
       Компьютерная школа Hillel — одна из крупнейших IT-школ в Украине, и с каждым годом мы продолжаем развиваться и
       внедрять инновации в обучение.
       К нам приходят и те, кто хочет приобрести новую профессию или «прокачать» уже существующие знания, и люди, которые
@@ -46,80 +45,50 @@
       IT-компаний, проводим для студентов бонусные занятия по профильному английскому языку, подбираем полезные
       видеоматериалы и максимально комфортно организовываем учебный процесс.
     </p>
-  </div>
 
-</section>
+    <!--    start LIST-->
 
-<!--END SECTION TYPOGRAPHY-->
+    <h2 class='list__title'>
+      Unordered list
+    </h2>
 
-
-<!--START SECTION LIST-TYPES-->
-
-<section class='list-types'>
-
-  <div class='container'>
-
-    <div class='list-types__wrapper-content'>
-      <h2 class='list-types__title'>
-        Unordered list
-      </h2>
-
-      <ul class='list-types__unordered-list'>
-        <li class='list-types__item'>
-          Прозорість та поінформованість користувачів про обробку персональних даних.
-        </li>
-        <li class='list-types__item'>
-          Відсутність належної згоди користувачів для обробки персональних даних з метою персоналізації реклами.
-        </li>
-      </ul>
-    </div>
-
-    <div class='list-types__wrapper-content'>
-      <h2 class='list-types__title'>
-        Ordered list
-      </h2>
-
-      <ul class='list-types__ordered-list'>
-        <li class='list-types__item'>
-          Прозорість та поінформованість користувачів про обробку персональних даних.
-        </li>
-        <li class='list-types__item'>
-          Відсутність належної згоди користувачів для обробки персональних даних з метою персоналізації реклами.
-        </li>
-      </ul>
-    </div>
-
-  </div>
-
-</section>
-
-<!--END SECTION LIST-TYPES-->
+    <ul class='list__unordered'>
+      <li class='list__item'>
+        Прозорість та поінформованість користувачів про обробку персональних даних.
+      </li>
+      <li class='list__item'>
+        Відсутність належної згоди користувачів для обробки персональних даних з метою персоналізації реклами.
+      </li>
+    </ul>
 
 
-<!--START SECTION LINK-TYPES-->
+    <h2 class='list__title'>
+      Ordered list
+    </h2>
 
-<section class='link-types'>
-  <div class='container'>
+    <ol class='list-ordered'>
+      <li class='list__item'>
+        Прозорість та поінформованість користувачів про обробку персональних даних.
+      </li>
+      <li class='list__item'>
+        Відсутність належної згоди користувачів для обробки персональних даних з метою персоналізації реклами.
+      </li>
+    </ol>
+    <!--   end LIST-->
 
-    <h2 class='link-types__title'>
+    <!--    start LINK-->
+
+    <h2 class='link__title'>
       Link
     </h2>
 
-    <a href='' class='link-types__link'>
+    <a href='' class='link'>
       https://fom.in.ua/examples/responsive/site.zip
     </a>
 
-  </div>
+    <!--    end LINK-->
 
-</section>
-
-<!--END SECTION LINK-TYPES-->
-
-
-<!--START SECTION ASSETS-->
-
-<section class='assets'>
-  <div class='container'>
+    <!--    start ASSETS-->
     <h2 class='assets__title'>
       Assets
     </h2>
@@ -133,12 +102,48 @@
       <img class='assets-icon' src='Image/symbol-P.svg' alt=''>
       <img class='assets-icon' src='Image/slash.svg' alt=''>
     </div>
+    <!--    END ASSETS-->
+
+    <!--    START INTERACTIVE ELEMENTS-->
+
+    <button class='button' type='submit'>
+      Ще публікації
+    </button>
+
+
+    <img class='image__spinner' src='Image/ellipse-rotate.svg' alt=''>
+
+
+    <div class='slider__wrapper'>
+
+      <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <circle class='slider-circle slider-circle--selected' opacity='0.2' cx='8' cy='8' r='8' fill='#24A3FF' />
+      </svg>
+      <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <circle class='slider-circle slider-circle--selected' opacity='0.2' cx='8' cy='8' r='8' fill='#24A3FF' />
+      </svg>
+      <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <circle class='slider-circle slider-circle--selected' opacity='0.2' cx='8' cy='8' r='8' fill='#24A3FF' />
+      </svg>
+    </div>
+
+
+    <div class='wrapper__switch'>
+      <label class='wrapper__switch-caption'>
+        <input class='switch__elem' type='checkbox' />
+        <span class='switch__text'>
+            новини
+          </span>
+        <span class='switch__text--2'>
+            компанії
+          </span>
+      </label>
+    </div>
+    <!--    END INTERACTIVE ELEMENTS-->
+
   </div>
-
-</section>
-
-<!--START SECTION ASSETS-->
-
+  <!--  END CONTAINER-->
+</div>
 
 <!--START SECTION HEADER-->
 
@@ -146,60 +151,56 @@
 
   <div class='container header__container'>
 
-    <div class='header__wrapper-content'>
-
-      <a href='' class='logo'>
-        <img class='header__logo' src='Image/hlegas-logo.svg' alt='logo'>
-        <img class='header__image' src='Image/slash.svg' alt='slash'>
-        <span class='logo__text'>
+    <a href='' class='logo'>
+      <img class='header__logo' src='Image/hlegas-logo.svg' alt='logo'>
+      <img class='header__image' src='Image/slash.svg' alt='slash'>
+      <span class='logo__text'>
               публікації
             </span>
-        <img class='header__image' src='Image/symbol-P.svg' alt='symbol P'>
-      </a>
+      <img class='header__image' src='Image/symbol-P.svg' alt='symbol P'>
+    </a>
 
-      <div class='header__wrapper-form'>
-        <form action='' class='header__form'>
-          <label class='header__form-caption'>
-            <input class='header__elem' type='radio' name='language' value='ukr' checked>
-            <span class='header__elem__text'>УКР</span>
-          </label>
+    <div class='header__wrapper-form'>
+      <form action='' class='header__form'>
+        <label class='header__form-caption'>
+          <input class='header__elem' type='radio' name='language' value='ukr' checked>
+          <span class='header__elem__text'>УКР</span>
+        </label>
 
-          <label class='header__form-caption'>
-            <input class='header__elem' type='radio' name='language' value='ru'>
-            <span class='header__elem__text'>RU</span>
-          </label>
+        <label class='header__form-caption'>
+          <input class='header__elem' type='radio' name='language' value='ru'>
+          <span class='header__elem__text'>RU</span>
+        </label>
 
-          <label class='header__form-caption'>
-            <input class='header__elem' type='radio' name='language' value='eng'>
-            <span class='header__elem__text'>EN</span>
-          </label>
+        <label class='header__form-caption'>
+          <input class='header__elem' type='radio' name='language' value='eng'>
+          <span class='header__elem__text'>EN</span>
+        </label>
 
-        </form>
+      </form>
 
-        <ul class='header__list'>
-          <li class='header__list__item'>
-            <a href='' class='header__list__link'>
-              Одеса, Адміральський пр., 3
-            </a>
-          </li>
-          <li class='header__list-item'>
-            <a href='tel:+380503901591' class='header__list__link'>
-              +38 (050) 390 15 91
-            </a>
-          </li>
-          <li class='header__list-item'>
-            <a href='' class='header__list__link'>
-              <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                <path class='header__path'
-                      d='M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z'
-                      fill='#B3B3BA' />
-              </svg>
+      <ul class='header__list'>
+        <li class='header__list__item'>
+          <a href='' class='header__list__link'>
+            Одеса, Адміральський пр., 3
+          </a>
+        </li>
+        <li class='header__list-item'>
+          <a href='tel:+380503901591' class='header__list__link'>
+            +38 (050) 390 15 91
+          </a>
+        </li>
+        <li class='header__list-item'>
+          <a href='' class='header__list__link'>
+            <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path class='header__path'
+                    d='M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z'
+                    fill='#B3B3BA' />
+            </svg>
 
-            </a>
-          </li>
-        </ul>
-      </div>
-
+          </a>
+        </li>
+      </ul>
     </div>
 
     <nav class='header__nav'>
@@ -244,12 +245,12 @@
 <footer class='footer'>
   <div class='container footer__container'>
     <ul class='footer__list'>
-      <li class='footer__item footer__item--first'>
+      <li class='footer__item footer__item--address'>
         <a class='footer__link' href=''>
           Одеса, Адміральський пр., 3
         </a>
       </li>
-      <li class='footer__item'>
+      <li class='footer__item footer__item--with-dot'>
         <a class='footer__link'
            href='https://www.google.com.ua/maps/place/%D0%90%D0%B4%D0%BC%D0%B8%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF.,+3,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+65000/@46.4364852,30.7392503,16z/data=!4m5!3m4!1s0x40c63396894457b7:0x7f6c5236cbcb70c8!8m2!3d46.436045!4d30.7401301?hl=ru'
            target='_blank'>
@@ -265,12 +266,12 @@
           </svg>
         </a>
       </li>
-      <li class='footer__item'>
+      <li class='footer__item footer__item--with-dot'>
         <a class='footer__link' href='tel:+380503901591' target='_blank'>
           +38 (050) 390 15 91
         </a>
       </li>
-      <li class='footer__item'>
+      <li class='footer__item footer__item--with-dot'>
         <a class='footer__link' href='mailto:contact@hlegals.net' target='_blank'>
           contact@hlegals.net
         </a>
@@ -286,69 +287,29 @@
 <!--END SECTION FOOTER-->
 
 
-<!--START SECTION INTERACTIVE-ELEMENTS-->
-
-<section class='interactive-elements'>
-  <div class='container interactive-elements__container'>
-
-    <button class='button' type='submit'>
-      Ще публікації
-    </button>
-
-    <div class='wrapper__spinner'>
-      <img class='image__spinner' src='Image/ellipse-rotate.svg' alt=''>
-    </div>
-
-
-    <div class='slider__wrapper'>
-
-      <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <circle class='interactive-elements__circle' opacity='0.2' cx='8' cy='8' r='8' fill='#24A3FF' />
-      </svg>
-      <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <circle class='interactive-elements__circle' opacity='0.2' cx='8' cy='8' r='8' fill='#24A3FF' />
-      </svg>
-      <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <circle class='interactive-elements__circle' opacity='0.2' cx='8' cy='8' r='8' fill='#24A3FF' />
-      </svg>
-    </div>
-
-
-    <div class='wrapper__switch'>
-      <label class='wrapper__switch-caption'>
-        <input class='switch__elem' type='checkbox' />
-        <span class='switch__text'>
-            новини
-          </span>
-        <span class='switch__text--2'>
-            компанії
-          </span>
-      </label>
-    </div>
-  </div>
-  <
-
-
-</section>
-
-<!--END SECTION INTERACTIVE-ELEMENTS-->
-
-
 <!--START SECTION EXPERIENCE-->
 <section class='experience'>
-  <div class='container-small experience__container'>
-    <ul class='experience__List'>
-      <li class='experience__item'>
-        Послідовні
+  <div class='container experience__container'>
+    <ul class='experience__list'>
+      <li class='experience__item experience__item--selected'>
+        <button class='experience__button'>
+          Послідовні
+        </button>
       </li>
-      <li class='experience__item'>
-        Клієнтоорієнтовані
+      <li class='experience__item experience__item--selected'>
+        <button class='experience__button'>
+          Клієнтоорієнтовані
+        </button>
       </li>
-      <li class='experience__item'>
-        Інноваційні
+      <li class='experience__item experience__item--selected'>
+        <button class='experience__button'>
+          Інноваційні
+        </button>
       </li>
-      <li class='experience__item'>
-        Бізнес-орієнтовані Юристи
+      <li class='experience__item experience__item--selected'>
+        <button class='experience__button'>
+          Бізнес-орієнтовані Юристи
+        </button>
       </li>
     </ul>
 
@@ -371,7 +332,7 @@
 
 <section class='cases'>
 
-  <div class='container-middle'>
+  <div class='container'>
 
     <ul class='cases__list'>
       <li class='cases__item'>
@@ -403,8 +364,8 @@
           tapgerine
         </p>
       </li>
-      <li class='cases__item'>
-        <p class='cases__item-text--hover'>
+      <li class='cases__item cases__item--hidden'>
+        <p class='cases__item-standard cases__item--hover'>
           Prolegals у співпраці з юристами Clyde & Co виступила юридичним консультантом відомого іноземного банку у
           зв'язку з фінансуванням ряду угод з купівлі-продажу сільськогосподарської продукції. Юристи компанії, серед
           іншого, надали банку комплексне юридичний висновок про механізм роботи застав в Україні, способи звернення
@@ -445,44 +406,68 @@
 <!--START SECTION CLIENTS-->
 
 <section class='clients'>
-  <div class='container-lg'>
+  <div class='container'>
 
     <ul class='clients__list'>
-      <li class='clients__item' style='background-color: var(--background-color-hillel)'>
-        <img class='clients__image' src='Image/hillel-logo.svg' alt='logo Hillel'>
+      <li class='clients__item' style='background-color: var(--color-background-hillel)'>
+        <a href='' class='clients__link' target='_blank'>
+          <img class='clients__image' src='Image/hillel-logo.svg' alt='logo Hillel'>
+        </a>
       </li>
-      <li class='clients__item' style='background-color: var(--background-color-wanna-biz)'>
-        <img class='clients__image' src='Image/wanna-biz-logo.svg' alt='logo Wanna-biz'>
+      <li class='clients__item' style='background-color: var(--color-background-wanna-biz)'>
+        <a href='' class='clients__link' target='_blank'>
+          <img class='clients__image' src='Image/wanna-biz-logo.svg' alt='logo Wanna-biz'>
+        </a>
       </li>
-      <li class='clients__item' style='background-color: var(--background-color-tapgerine'>
-        <img class='clients__image' src='Image/tapgerine-logo.svg' alt='logo Tapgerine'>
+      <li class='clients__item' style='background-color: var(--color-background-tapgerine)'>
+        <a href='' class='clients__link' target='_blank'>
+          <img class='clients__image' src='Image/tapgerine-logo.svg' alt='logo Tapgerine'>
+        </a>
       </li>
-      <li class='clients__item' style='background-color: var(--background-color-3dlook)'>
-        <img class='clients__image' src='Image/look-logo.svg' alt='logo 3-D Look'>
+      <li class='clients__item' style='background-color: var(--color-background-3dlook)'>
+        <a href='' class='clients__link' target=''>
+          <img class='clients__image' src='Image/look-logo.svg' alt='logo 3-D Look'>
+        </a>
       </li>
-      <li class='clients__item' style='background-color: var(--background-color-orangeaer)'>
-        <img class='clients__image' src='Image/oranger-logo.svg' alt='logo Oranger'>
+      <li class='clients__item' style='background-color: var(--color-background-orangeaer)'>
+        <a href='' class='clients__link' target='_blank'>
+          <img class='clients__image' src='Image/oranger-logo.svg' alt='logo Oranger'>
+        </a>
       </li>
-      <li class='clients__item' style='background-color: var(--background-color-addtelligent)'>
-        <img class='clients__image' src='Image/addtelligent-logo.svg' alt='logo Addtelligent'>
+      <li class='clients__item' style='background-color: var(--color-background-addtelligent)'>
+        <a href='' class='clients__link' target=''>
+          <img class='clients__image' src='Image/addtelligent-logo.svg' alt='logo Addtelligent'>
+        </a>
       </li>
-      <li class='clients__item' style='background-color: var(--background-color-clickky)'>
-        <img class='clients__image' src='Image/clickky-logo.svg' alt='logo Clickky'>
+      <li class='clients__item' style='background-color: var(--color-background-clickky)'>
+        <a href='' class='clients__link' target=''>
+          <img class='clients__image' src='Image/clickky-logo.svg' alt='logo Clickky'>
+        </a>
       </li>
-      <li class='clients__item' style='background-color: var(--background-color-eco-lines)'>
-        <img class='clients__image' src='Image/ecolease.svg' alt='logo Ecolease'>
+      <li class='clients__item' style='background-color: var(--color-background-eco-lines)'>
+        <a href='' class='clients__link' target=''>
+          <img class='clients__image' src='Image/ecolease.svg' alt='logo Ecolease'>
+        </a>
       </li>
-      <li class='clients__item' style='background-color: var(--background-color-infra-tec)'>
-        <img class='clients__image' src='Image/infra-tek-logo.svg' alt='logo Infra-Tek'>
+      <li class='clients__item' style='background-color: var(--color-background-infra-tec)'>
+        <a href='' class='clients__link' target=''>
+          <img class='clients__image' src='Image/infra-tek-logo.svg' alt='logo Infra-Tek'>
+        </a>
       </li>
-      <li class='clients__item' style='background-color: var(--background-color-sity-park)'>
-        <img class='clients__image' src='Image/sity-park-logo.svg' alt='logo Sity-park'>
+      <li class='clients__item' style='background-color: var(--color-background-sity-park)'>
+        <a href='' class='clients__link' target=''>
+          <img class='clients__image' src='Image/sity-park-logo.svg' alt='logo Sity-park'>
+        </a>
       </li>
-      <li class='clients__item' style='background-color: var(--background-color-art-print)'>
-        <img class='clients__image' src='Image/art-print-logo.svg' alt='logo Art-print'>
+      <li class='clients__item' style='background-color: var(--color-background-art-print)'>
+        <a href='' class='clients__link' target=''>
+          <img class='clients__image' src='Image/art-print-logo.svg' alt='logo Art-print'>
+        </a>
       </li>
-      <li class='clients__item' style='background-color: var(--main-black-color)'>
-        <img class='clients__image' src='Image/ultimate-logo.svg' alt='logo Ultimate'>
+      <li class='clients__item' style='background-color: var(--color-main-black)'>
+        <a href='' class='clients__link' target=''>
+          <img class='clients__image' src='Image/ultimate-logo.svg' alt='logo Ultimate'>
+        </a>
       </li>
     </ul>
   </div>

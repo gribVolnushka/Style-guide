@@ -5,10 +5,9 @@
 
 .cases__list {
   display: grid;
-  grid-template-columns: 24.34% 8.42% 26.19% 8.20% 32.78%;
+  grid-template-columns: 24.34% 8.42% 26.19% 8.2% 32.78%;
   grid-template-rows: 57px 198px 184px 198px;
-  background-color: var(--background-color);
-  margin-bottom: 50px;
+  background-color: var(--color-background);
 }
 
 .cases__item {
@@ -17,10 +16,10 @@
   justify-content: flex-end;
   gap: 20px;
   padding: 20px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid var(--color-main-white);
 
   &:hover {
-    background-color: var(--background-alternative-color);
+    background-color: var(--color-background-alternative);
   }
 }
 
@@ -79,27 +78,45 @@
   grid-row-start: 4;
 }
 
+.cases__item--hidden {
+  position: relative;
+
+  &:hover {
+    &::after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-image: url('../static/Image/switch-hover.svg');
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 20px;
+      bottom: 40px;
+    }
+  }
+}
+
 .cases__item__title {
-  @include fonts-300();
+  @include font-xxs-small();
   font-weight: 700;
-  color: var(--accent-color);
+  color: var(--color-accent);
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .cases__item-text {
-  @include fonts-400();
+  @include font-medium();
   font-weight: 500;
   color: var(--main-tertiary-color);
 }
 
-.cases__item-text--hover {
-  @include fonts-100();
-  color: var(--main-black-color);
+.cases__item-standard {
+  @include font-small();
+  color: var(--color-main-black);
   width: 67.6%;
 }
 
 .cases__company-name {
-  @include fonts-100();
-  color: var(--background-text-color);
+  @include font-small();
+  color: var(--color-background-text);
 }
