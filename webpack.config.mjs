@@ -60,7 +60,12 @@ export default (_, { mode }) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './src/static/index.html',
+        template: 'src/static/index.html',
+        filename: 'index.html'
+      }),
+      new HtmlWebpackPlugin({
+        template: 'src/static/home.html',
+        filename: 'home.html'
       }),
       new MiniCssExtractPlugin({
         filename: '[name].[fullhash].css',
