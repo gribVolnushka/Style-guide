@@ -1,0 +1,34 @@
+@mixin font-xxs-small() {
+  font-size: 1.4rem;
+  line-height: calc(17 / 14);
+}
+
+@mixin font-xs-small() {
+  font-size: 1.6rem;
+  line-height: calc(19 / 16);
+}
+
+@mixin font-small() {
+  font-size: 1.8rem;
+  line-height: calc(26 / 18);
+}
+
+@mixin font-small-2() {
+  font-size: 1.8rem;
+  line-height: calc(21 / 18);
+}
+
+@mixin font-medium() {
+  font-size: 2.4rem;
+  line-height: calc(28 / 24);
+}
+
+@mixin font-title() {
+  font-size: 3.2rem;
+  line-height: calc(38 / 32);
+}
+
+@mixin font-mega() {
+  font-size: 4.2rem;
+  line-height: calc(50 / 42);
+}

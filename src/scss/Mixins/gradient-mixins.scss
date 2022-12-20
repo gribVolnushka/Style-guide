@@ -1,0 +1,36 @@
+@mixin gradient-regular() {
+  background-image: linear-gradient(
+    128.63deg,
+    #323264 0%,
+    #323264 73.96%,
+    #a54b5f 100%
+  );
+}
+
+@mixin gradient-soft() {
+  background-image: linear-gradient(
+    42.01deg,
+    #323264 14.33%,
+    #323264 51.39%,
+    #7a425e 87.53%
+  );
+}
+
+@mixin gradient-red() {
+  background-image: linear-gradient(121.42deg, #f0145a 30.65%, #693264 107.33%);
+}
+
+@mixin gradient-supersoft() {
+  background-image: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
+}
+
+@mixin gradient-red-text() {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+}
