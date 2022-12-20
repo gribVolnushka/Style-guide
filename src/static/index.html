@@ -141,6 +141,29 @@
     </div>
     <!--    END INTERACTIVE ELEMENTS-->
 
+    <!--    START FORM-->
+    <form action='' class='form--help'>
+      <label>
+        <input class='form__input' type='text' name='userName' placeholder="Ім'я">
+      </label>
+
+      <textarea class='form__text' name='message' rows='6' placeholder='Текст повідомлення'></textarea>
+
+      <label class='form__caption' for='userTel'>
+        ЯК ВАМ ВІДПОВІСТИ?
+      </label>
+      <input class='form__input' id='userTel' type='number' name='userNumber' placeholder='Номер телефону' required>
+
+      <label>
+        <input class='form__input' type='email' name='userMail' placeholder='Чи email' required
+      </label>
+
+      <button class='button' type='submit'>
+        Надіслати запит
+      </button>
+    </form>
+    <!--    END FORM-->
+
   </div>
   <!--  END CONTAINER-->
 </div>
@@ -286,46 +309,6 @@
 
 <!--END SECTION FOOTER-->
 
-
-<!--START SECTION EXPERIENCE-->
-<section class='experience'>
-  <div class='container experience__container'>
-    <ul class='experience__list'>
-      <li class='experience__item experience__item--selected'>
-        <button class='experience__button'>
-          Послідовні
-        </button>
-      </li>
-      <li class='experience__item experience__item--selected'>
-        <button class='experience__button'>
-          Клієнтоорієнтовані
-        </button>
-      </li>
-      <li class='experience__item experience__item--selected'>
-        <button class='experience__button'>
-          Інноваційні
-        </button>
-      </li>
-      <li class='experience__item experience__item--selected'>
-        <button class='experience__button'>
-          Бізнес-орієнтовані Юристи
-        </button>
-      </li>
-    </ul>
-
-    <div class='experience__wrapper-content'>
-      <h2 class='experience__title'>
-        Перевертаємо уявлення про юридичні послуги
-      </h2>
-
-      <p class='experience__text'>
-        Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття
-        ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.
-      </p>
-    </div>
-  </div>
-</section>
-<!--END SECTION EXPERIENCE-->
 
 
 <!--START SECTION CASES-->
@@ -474,6 +457,473 @@
 </section>
 <!--END SECTION CLIENTS-->
 
+<!--START SECTION HERO-->
+<div class='hero__wrapper'>
+  <header class='header'>
 
+    <div class='container header__container'>
+
+      <a href='' class='logo'>
+        <img class='header__logo' src='Image/hlegas-logo.svg' alt='logo'>
+        <img class='header__image' src='Image/slash.svg' alt='slash'>
+        <span class='logo__text'>
+              публікації
+            </span>
+        <img class='header__image' src='Image/symbol-P.svg' alt='symbol P'>
+      </a>
+
+      <div class='header__wrapper-form'>
+        <form action='' class='header__form'>
+          <label class='header__form-caption'>
+            <input class='header__elem' type='radio' name='language' value='ukr' checked>
+            <span class='header__elem__text'>УКР</span>
+          </label>
+
+          <label class='header__form-caption'>
+            <input class='header__elem' type='radio' name='language' value='ru'>
+            <span class='header__elem__text'>RU</span>
+          </label>
+
+          <label class='header__form-caption'>
+            <input class='header__elem' type='radio' name='language' value='eng'>
+            <span class='header__elem__text'>EN</span>
+          </label>
+
+        </form>
+
+        <ul class='header__list'>
+          <li class='header__list__item'>
+            <a href='' class='header__list__link'>
+              Одеса, Адміральський пр., 3
+            </a>
+          </li>
+          <li class='header__list-item'>
+            <a href='tel:+380503901591' class='header__list__link'>
+              +38 (050) 390 15 91
+            </a>
+          </li>
+          <li class='header__list-item'>
+            <a href='' class='header__list__link'>
+              <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path class='header__path'
+                      d='M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z'
+                      fill='#B3B3BA' />
+              </svg>
+
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class='header__nav'>
+        <ul  class='header__nav-list'>
+          <li class='header__nav-list__item'>
+            <a class='header__nav-list__link' href=''>
+              о нас
+            </a>
+          </li>
+          <li class='header__nav-list__item'>
+            <a class='header__nav-list__link' href=''>
+              послуги
+            </a>
+          </li>
+          <li class='header__nav-list__item'>
+            <a class='header__nav-list__link' href=''>
+              команда
+            </a>
+          </li>
+          <li class='header__nav-list__item'>
+            <a class='header__nav-list__link' href=''>
+              публікації
+            </a>
+          </li>
+          <li class='header__nav-list__item'>
+            <a class='header__nav-list__link' href=''>
+              контакти
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </header>
+
+  <section class='Hero'>
+    <div class='container hero__container'>
+      <h1 class='hero__title'>
+        системний адміністратор правових рішень
+      </h1>
+    </div>
+  </section>
+    </div>
+
+
+<!--END SECTION HERO-->
+
+<!--START SECTION EXPERIENCE-->
+<section class='experience'>
+  <div class='container experience__container'>
+    <ul class='experience__list'>
+      <li class='experience__item experience__item--selected'>
+        <button class='experience__button'>
+          Послідовні
+        </button>
+      </li>
+      <li class='experience__item experience__item--selected'>
+        <button class='experience__button'>
+          Клієнтоорієнтовані
+        </button>
+      </li>
+      <li class='experience__item experience__item--selected'>
+        <button class='experience__button'>
+          Інноваційні
+        </button>
+      </li>
+      <li class='experience__item experience__item--selected'>
+        <button class='experience__button'>
+          Бізнес-орієнтовані Юристи
+        </button>
+      </li>
+    </ul>
+
+    <div class='experience__wrapper-content'>
+      <h2 class='experience__title'>
+        Перевертаємо уявлення про юридичні послуги
+      </h2>
+
+      <p class='experience__text'>
+        Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття
+        ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.
+      </p>
+    </div>
+  </div>
+</section>
+<!--END SECTION EXPERIENCE-->
+
+
+<!--START PAGE SERVICES-->
+
+<div class='hero'>
+
+
+  <!--  START SERVICES-->
+  <section class='services'>
+    <div class='container'>
+
+      <h2 class='services__title'>
+        Що ми вміємо робити краще за інших?
+      </h2>
+
+      <ul class='services__list'>
+        <li class='services__item'>
+          <img src='Image/icon-bag.svg' alt='Icon pink bag' class='services__icon'>
+          <h3 class='services__subtitle'>
+            IT та електронна комерція
+          </h3>
+          <p class='services__text'>
+            Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота
+            відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста.
+          </p>
+        </li>
+        <li class='services__item'>
+          <img src='Image/icon-briefcase.svg' alt='Icon pink briefcase' class='services__icon'>
+          <h3 class='services__subtitle'>
+            Комплексний щоденний
+            юридичний супровід
+          </h3>
+          <p class='services__text'>
+            До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в
+            Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.
+          </p>
+        </li>
+        <li class='services__item'>
+          <img src='Image/icon-rudder.svg' alt='Rudder icon' class='services__icon'>
+          <h3 class='services__subtitle'>
+            Структуризація корпоративних відносин
+          </h3>
+          <p class='services__text'>
+            Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу команду, які впишуться в повсякденне
+            життя вашої компанії.
+          </p>
+        </li>
+        <li class='services__item'>
+          <img src='Image/icon-hands.svg' alt='Hands icon' class='services__icon'>
+          <h3 class='services__subtitle'>
+            Побудовa договірних відносин
+          </h3>
+          <p class='services__text'>
+            Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист. Будь-хто в компанії може впіймати
+            його біля кавоварки і просто поговорити про поточні справи замість очікування статусу update.
+
+
+          </p>
+        </li>
+        <li class='services__item'>
+          <img src='Image/icon-check.svg' alt='Icon symbol done' class='services__icon'>
+          <h3 class='services__subtitle'>
+            Захист бізнесу, інтелектуальної власності
+          </h3>
+          <p class='services__text'>
+            А весь інший час він працюватиме над новими різноплановими проектами, тому вже точно не зупиниться в
+            професійному розвитку. Так чи інакше, на вас працюватиме весь Axon Partners замість корпоративного юриста.
+          </p>
+        </li>
+        <li class='services__item'>
+          <img src='Image/icon-hummer.svg' alt='hummer icon' class='services__icon'>
+          <h3 class='services__subtitle'>
+            Судове представництво
+          </h3>
+          <p class='services__text'>
+            Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес або транснаціональна компанія?
+            Маєте власний юридичний відділ, чи ні?
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--  END SERVICES-->
+</div>
+<!--END PAGE SERVICES-->
+
+<!--START TEAM-->
+<section class='team'>
+  <div class='container team__container'>
+    <img src='Image/leader.jpg' alt='Photo of a man with glasses' class='team__image'>
+
+    <div class='team__wrapper-content'>
+      <a class='team__link' href=''>
+        Команда
+        <img src='Image/arrow-blue.svg' alt='Blue arrow' class='team__icon'>
+      </a>
+
+      <blockquote class='team__quote'>
+        Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли
+        більшість безсилі.
+      </blockquote>
+
+      <p class='team__content--author'>
+        Олександр Олександровський
+      </p>
+
+      <p class='team__content--position'>
+        Керуючий партнер
+      </p>
+    </div>
+
+  </div>
+</section>
+<!--END TEAM-->
+
+<!--START SECTION COMMAND-->
+<section class='command'>
+  <div class='container command__container'>
+    <h2 class='command__title'>
+      Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли
+      більшість безсилі.
+    </h2>
+
+    <ul  class='command__list'>
+      <li class='command__item'>
+        <img src='Image/Oleksandrovsky.jpg' alt='Man with glasses' class='command__image'>
+          <p class='command__text--author'>
+            Олександр Олександровський
+          </p>
+          <p class='command__text--position'>
+            Керуючий партнер
+          </p>
+      </li>
+      <li class='command__item'>
+        <img src='Image/Kobzar-man.jpg' alt='Man with glasses' class='command__image'>
+        <p class='command__text--author'>
+          Оксана Кобзар
+        </p>
+        <p class='command__text--position'>
+          Equity partner, Attorney-at-law
+        </p>
+      </li>
+      <li class='command__item'>
+        <img src='Image/Melnik.jpg' alt='Fair-haired man' class='command__image'>
+        <p class='command__text--author'>
+          Владислав Мельник
+        </p>
+        <p class='command__text--position'>
+          Associate
+        </p>
+      </li>
+      <li class='command__item'>
+        <img src='Image/Melnik-2.jpg' alt='Man with brown hair' class='command__image'>
+        <p class='command__text--author'>
+          Владислав Мельник
+        </p>
+        <p class='command__text--position'>
+          Associate
+        </p>
+      </li>
+      <li class='command__item'>
+        <img src='Image/Kobzar.jpg' alt='Girl with brown hair' class='command__image'>
+        <p class='command__text--author'>
+          Оксана Кобзар
+        </p>
+        <p class='command__text--position'>
+          Equity partner, Attorney-at-law
+        </p>
+      </li>
+      <li class='command__item'>
+        <img src='Image/Gudymenko.jpg' alt='Girl with brown hair and glasses' class='command__image'>
+        <p class='command__text--author'>
+          Юлія Гудименко
+        </p>
+        <p  class='command__text--position'>
+          Associate, Attorney-at-law
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+<!--END SECTION COMMAND-->
+
+<!--START PAGE ABOUT-->
+<!--START SECTION about-->
+<section class='about'>
+  <div class='container about__container'>
+    <div class='about__wrapper-content'>
+      <h2 class='about__title'>
+        Перевертаємо уявлення про юридичні послуги.
+      </h2>
+
+      <p class='about__paragraph'>
+        Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття
+        ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.
+      </p>
+
+      <p class='about__paragraph'>
+        Prolegals – надійний бізнес-партнер, що підтверджується стабільним співробітництвом з міжнародними юридичними
+        фірмами, довірою великих українських і міжнародних компаній, визнанням професійних рейтингів.
+      </p>
+    </div>
+
+    <ul class='about__list'>
+      <li class='about__item'>
+        <p class='about__wrapper-text'>
+          <img src='Image/icon__flag.svg' alt='flag icon' class='about__icon'>
+          10+
+        </p>
+        <p class='about__text'>
+          років релевантного досвіду
+        </p>
+      </li>
+      <li class='about__item'>
+        <p class='about__wrapper-text'>
+          <img src='Image/icon__schoolbag.svg' alt='star icon' class='about__icon'>
+          30+
+        </p>
+        <p class='about__text'>
+          активних клієнтів, які довіряють нам свої доручення щомісячно
+        </p>
+      </li>
+      <li class='about__item'>
+        <p class='about__wrapper-text'>
+          <img src='Image/icon__star.svg' alt='schoolbag icon' class='about__icon'>
+          500+
+        </p>
+        <p class='about__text'>
+          годин роботи «pro bono» щорічно
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <div class='about__wrapper-image'>
+    <div class='about__wrapper-contain'>
+      <img src='Image/team.jpg' alt='' class='about__image'>
+      <h3 class='about__subtitle'>
+        КОМАНДА
+      </h3>
+    </div>
+  </div>
+
+</section>
+
+<!--ENS SECTION about-->
+
+<!--START SECTION QUALITY-->
+
+<section class='quality'>
+  <div class='container quality__container'>
+    <div class='quality__wrapper-text'>
+      <p class='quality__paragraph'>
+        Історично незмінна юридична професія почала переформатовуватись в останні роки. Клієнти це відчувають, але
+        юридичні фірми все ще опираються еволюції. Клієнти потребують зручності, простоти, прозорої оплати. Google, IBM
+        WatsОn, Symantec Clearwell доводять, що технологічна революція в юридичних послугах розпочалася і стала
+        неминучою.
+      </p>
+      <p class='quality__paragraph'>
+        Якість — це те, про що ми піклуємося найбільше.
+      </p>
+      <p class='quality__paragraph'>
+        Все просто. Якщо ви не задоволені нашою роботою, ми повернемо гроші. Ми довіряємо нашим клієнтам. І ми хочемо,
+        щоб клієнти нам теж довіряли.
+      </p>
+    </div>
+
+    <h2 class='quality__title'>
+      Якість — це те, про що ми піклуємося найбільше.
+    </h2>
+  </div>
+</section>
+
+<!--END SECTION QUALITY-->
+
+<!--START SECTION SUCCESSES-->
+<section class='successes'>
+  <div class='container successes__container'>
+    <h2 class='successes__title'>
+      Досягнення
+    </h2>
+
+    <ul class='successes__list'>
+      <li class='successes__item'>
+        <img class='successes__image' src='Image/success__legal.svg' alt=''>
+      </li>
+      <li class='successes__item'>
+        <img class='successes__image' src='Image/success__award.svg' alt=''>
+      </li>
+      <li class='successes__item'>
+        <img class='successes__image' src='Image/success__leader.svg' alt=''>
+      </li>
+      <li class='successes__item'>
+        <img class='successes__image' src='Image/success__firm.svg' alt=''>
+      </li>
+    </ul>
+
+    <div class='slider__wrapper'>
+
+      <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <circle class='slider-circle slider-circle--selected' opacity='0.2' cx='8' cy='8' r='8' fill='#24A3FF' />
+      </svg>
+      <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <circle class='slider-circle slider-circle--selected' opacity='0.2' cx='8' cy='8' r='8' fill='#24A3FF' />
+      </svg>
+      <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <circle class='slider-circle slider-circle--selected' opacity='0.2' cx='8' cy='8' r='8' fill='#24A3FF' />
+      </svg>
+    </div>
+
+  </div>
+</section>
+<!--END SECTION SUCCESSES-->
+
+<!--END PAGE ABOUT-->
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+  var elem = document.querySelector('.grid');
+  var msnry = new Masonry( elem, {
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 200
+  });
+</script>
 </body>
 </html>

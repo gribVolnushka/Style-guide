@@ -1,0 +1,46 @@
+.team {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.team__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.team__wrapper-content {
+  padding: 40px 40px 173px 0;
+}
+
+.team__link {
+  @include font-xxs-small();
+  color: var(--color-active-regular);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 9px;
+}
+
+.team__quote {
+  @include font-mega();
+  @include gradient-red-text();
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.team__content--author {
+  @include font-small-2();
+  color: var(--color-background-text);
+  margin-bottom: 5px;
+}
+
+.team__content--position {
+  font-size: 1.6rem;
+  line-height: calc(22 / 16);
+  color: var(--color-background-text);
+  margin-bottom: 5px;
+}

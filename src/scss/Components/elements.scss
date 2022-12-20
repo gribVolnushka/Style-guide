@@ -194,3 +194,37 @@
   bottom: 1px;
   z-index: 4;
 }
+
+.form--help {
+  display: flex;
+  flex-direction: column;
+  width: 527px;
+  padding: 20px;
+  background-color: var(--color-background);
+}
+
+.form__input {
+  @include font-small();
+  -webkit-appearance: none;
+  color: var(--color-background-text);
+  width: 100%;
+  padding: 10px;
+  border-color: transparent;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.form__text {
+  @include font-small();
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 10px;
+  border-color: transparent;
+  border-radius: 8px;
+  color: var(--color-main-black);
+  margin-bottom: 20px;
+}
+
+.form__caption {
+  margin-bottom: 10px;
+}

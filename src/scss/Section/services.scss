@@ -1,0 +1,38 @@
+.services {
+  padding-top: 75px;
+  padding-bottom: 48px;
+}
+
+.services__title {
+  @include font-mega();
+  @include gradient-red-text();
+  font-weight: 700;
+  margin-bottom: 68px;
+}
+
+.services__list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.services__item {
+  width: 413px;
+  padding: 1px 15px 1px 1px;
+}
+
+.services__icon {
+  margin-bottom: 20px;
+}
+
+.services__subtitle {
+  @include font-medium();
+  color: var(--color-active-hover);
+  margin-bottom: 15px;
+}
+
+.services__text {
+  @include font-small();
+  color: var(--color-main-white);
+}
