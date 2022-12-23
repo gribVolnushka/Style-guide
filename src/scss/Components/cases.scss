@@ -107,7 +107,7 @@
 .cases__item-text {
   @include font-medium();
   font-weight: 500;
-  color: var(--main-tertiary-color);
+  color: var(--color-main--tertiary);
 }
 
 .cases__item-standard {

@@ -1,0 +1,20 @@
+.header {
+  padding-top: 50px;
+  padding-bottom: 63px;
+}
+
+.header__container {
+  grid-template-columns: 33.3% 18.6% 17.4% 30.6%;
+}
+
+.header__elem__text {
+  background-color: transparent;
+}
+
+.header__list__link {
+  color: var(--color-main-white);
+}
+
+.header__nav-list__link {
+  color: var(--color-main-white);
+}

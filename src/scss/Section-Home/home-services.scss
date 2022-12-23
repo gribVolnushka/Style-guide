@@ -3,6 +3,17 @@
   padding-bottom: 48px;
 }
 
+.services__link {
+  @include font-xxs-small();
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1px;
+  color: var(--color-main-white);
+}
+
 .services__title {
   @include font-mega();
   @include gradient-red-text();

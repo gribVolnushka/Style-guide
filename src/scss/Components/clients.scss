@@ -3,6 +3,16 @@
   padding-bottom: 30px;
 }
 
+.clients__title {
+  @include font-xxs-small();
+  font-weight: 700;
+  color: var(--color-main-primary);
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
 .clients__list {
   display: grid;
   grid-template-columns: repeat(4, 25%);

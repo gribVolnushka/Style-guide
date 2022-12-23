@@ -17,5 +17,16 @@ body {
 }
 
 .hero {
-  @include gradient-supersoft;
+  @include gradient-soft();
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    42.01deg,
+    #323264 14.33%,
+    #323264 51.39%,
+    #7a425e 87.53%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
 }
