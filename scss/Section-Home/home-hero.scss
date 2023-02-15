@@ -2,13 +2,13 @@
   flex-grow: 1;
   padding-top: 180px;
   padding-bottom: 20px;
-  //background-image: linear-gradient(
-  //    180deg,
-  //    rgba(50, 50, 100, 0) 16.67%,
-  //    #323264 100%
-  //  ),
-  //  url('../public/Image/background__big-P.svg'),
-  //  url('../public/Image/background__small-p.svg');
+  background-image: linear-gradient(
+      180deg,
+      rgba(50, 50, 100, 0) 16.67%,
+      #323264 100%
+    ),
+    url('../../Image/background__big-P.svg'),
+    url('../../Image/background__small-p.svg');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 200px, 600px 820px, auto;
@@ -20,12 +20,12 @@
   }
 
   @include media-small-tablet-screen() {
-    //background-image: linear-gradient(
-    //    180deg,
-    //    rgba(50, 50, 100, 0) 16.67%,
-    //    #323264 100%
-    //  ),
-    //  url('../static/Image/background__big-P.svg');
+    background-image: linear-gradient(
+        180deg,
+        rgba(50, 50, 100, 0) 16.67%,
+        #323264 100%
+      ),
+      url('../../Image/background__big-P.svg');
     padding-top: 220px;
   }
 
