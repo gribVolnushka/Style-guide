@@ -3,12 +3,16 @@
   padding-bottom: 5px;
   background-color: var(--color-background);
   position: relative;
+
+  @include media-phone-screen() {
+    padding-top: 10px;
+  }
 }
 
 .publications__link {
   @include font-xxs-small();
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 5px;
   color: var(--color-active-regular);
   font-weight: 600;
@@ -22,6 +26,11 @@
   @include gradient-red-text();
   font-weight: 700;
   margin-bottom: 40px;
+
+  @include media-phone-screen() {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+  }
 }
 
 .publications__list {
@@ -29,12 +38,31 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 40px;
+
+  @include media-phone-screen() {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .publications__item {
   width: 413px;
   background-color: var(--color-main-white);
   border-radius: 8px;
+
+  &:nth-child(3),
+  &:nth-child(5),
+  &:nth-child(6) {
+    @include media-phone-screen() {
+      display: none;
+    }
+  }
+
+  @include media-phone-screen() {
+    width: 100%;
+  }
 }
 
 .publications__image {
@@ -62,15 +90,25 @@
   padding-bottom: 20px;
   border-bottom: 4px solid var(--color-background-separater);
   margin-bottom: 20px;
+
+  @include media-phone-screen() {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
 }
 
 .publications__text {
   font-size: 1.6rem;
   line-height: calc(22 / 16);
+
+  @include media-phone-screen() {
+    display: none;
+  }
 }
 
 .publications__wrapper-background {
-  width: 1320px;
+  width: 100%;
   height: 200px;
   background-image: linear-gradient(
     180deg,
@@ -79,8 +117,23 @@
   );
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 4px solid var(--color-background-separater);
+
+  @include media-phone-screen() {
+    background-image: none;
+    position: static;
+    padding-bottom: 43px;
+    height: auto;
+  }
+}
+
+.publications__button {
+  @include media-phone-screen() {
+    box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+  }
 }

@@ -2,4 +2,12 @@
   background-image: unset;
   padding-top: 80px;
   padding-bottom: 40px;
+
+  @include media-small-screen() {
+    padding-top: 40px;
+  }
+
+  @include media-phone-screen() {
+    padding-bottom: 20px;
+  }
 }

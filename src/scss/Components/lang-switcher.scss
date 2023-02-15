@@ -3,6 +3,11 @@
   display: flex;
   align-items: center;
   gap: 26px;
+
+  @include media-small-tablet-screen() {
+    grid-column: 1/5;
+    justify-content: space-between;
+  }
 }
 
 .header__form {
