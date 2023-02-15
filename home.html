@@ -604,12 +604,13 @@
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
-  // var elem = document.querySelector('.publications__list');
-  // var msnry = new Masonry( elem, {
-  //   // options
-  //   itemSelector: '.publications__item',
-  //   columnWidth: 413
-  // });
+  var elem = document.querySelector('.publications__list');
+  var msnry = new Masonry(elem, {
+    // options
+    itemSelector: '.publications__item',
+    columnWidth: 413,
+    gutter: 15,
+  });
 </script>
 
 <script src='main.js' type='module'></script>
