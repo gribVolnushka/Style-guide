@@ -1,0 +1,13 @@
+.footer {
+  @include media-small-screen() {
+    padding-top: 20px;
+    padding-bottom: 118px;
+  }
+}
+
+.footer__container {
+  @include media-small-screen() {
+    border-top: none;
+    padding-top: 0;
+  }
+}

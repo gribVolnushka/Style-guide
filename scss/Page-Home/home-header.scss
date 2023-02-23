@@ -19,25 +19,18 @@
   }
 
   @include media-tablet-screen() {
-    grid-template-columns: 22.3% 23.6% 17.4% 36.6%;
+    grid-template-columns: 30.3% 15.6% 17.4% 36.6%;
   }
 
-  @include media-small-screen() {
-  }
 }
 
 .header__elem__text {
   background-color: transparent;
 }
 
-.header__list__link {
-  color: var(--color-main-white);
-
+.header__list-link {
   @include media-phone-screen() {
     color: var(--color-background-text);
   }
 }
 
-.header__nav-list__link {
-  color: var(--color-main-white);
-}

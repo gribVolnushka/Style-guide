@@ -139,8 +139,11 @@
 }
 
 .experience__slider-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
+  display: none;
+  @include media-phone-screen() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
 }

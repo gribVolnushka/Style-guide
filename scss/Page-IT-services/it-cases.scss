@@ -1,0 +1,9 @@
+.cases {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  @include media-phone-screen() {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
