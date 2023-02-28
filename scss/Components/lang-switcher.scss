@@ -17,18 +17,18 @@
 .header__elem {
   -webkit-appearance: unset;
 
-  &:hover ~ .header__elem__text {
+  &:hover ~ .header__elem-text {
     background-color: var(--color-background-text);
     color: var(--color-main-white);
   }
 
-  &:checked ~ .header__elem__text {
+  &:checked ~ .header__elem-text {
     background-color: var(--color-accent);
     color: var(--color-main-white);
   }
 }
 
-.header__elem__text {
+.header__elem-text {
   font-size: 1.2rem;
   line-height: calc(14 / 12);
   color: var(--color-background-text);

@@ -77,13 +77,6 @@
   font-weight: 600;
 }
 
-.contacts__image {
-  width: 100%;
-
-  @include media-phone-screen() {
-    object-fit: cover;
-  }
-}
 
 .contacts__form--help {
   display: flex;
@@ -101,7 +94,7 @@
   }
 }
 
-.contacts__form-subtitle {
+.contacts__subtitle {
   @include gradient-red-text();
   font-size: 3.2rem;
   line-height: 1.2;
@@ -113,7 +106,7 @@
   }
 }
 
-.contacts__form__input {
+.contacts__input {
   @include font-small();
   -webkit-appearance: none;
   color: var(--color-background-text);
@@ -125,7 +118,7 @@
   margin-bottom: 20px;
 }
 
-.contacts__form__text {
+.contacts__text {
   @include font-small();
   -webkit-appearance: none;
   width: 100%;
@@ -136,7 +129,7 @@
   margin-bottom: 20px;
 }
 
-.contacts__form__caption {
+.contacts__text--caption {
   @include font-xxs-small();
   color: var(--color-background-text);
   font-weight: 600;
@@ -146,4 +139,12 @@
 .contacts__wrapper-button {
   display: flex;
   justify-content: center;
+}
+
+.contacts__image {
+  width: 100%;
+
+  @include media-phone-screen() {
+    object-fit: cover;
+  }
 }

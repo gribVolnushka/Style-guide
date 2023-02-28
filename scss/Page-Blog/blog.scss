@@ -1,0 +1,146 @@
+.blog {
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  @include media-phone-screen() {
+    padding-bottom: 40px;
+  }
+}
+
+.blog__container {
+  display: flex;
+  justify-content: center;
+}
+
+.blog__wrapper-content {
+  width: 909px;
+
+  @include media-small-screen() {
+    width: 100%;
+  }
+}
+
+.blog__image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 40px;
+
+  @include media-small-tablet-screen() {
+    margin-bottom: 20px;
+  }
+
+  @include media-phone-screen() {
+    border-radius: 12px 12px 0 0;
+  }
+}
+
+.blog__title {
+  @include font-title();
+  color: var(--color-main-primary);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.blog__text--date {
+  @include font-xxs-small();
+  color: var(--color-background-text);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  border-bottom: 4px solid var(--color-background-alternative);
+  margin-bottom: 40px;
+
+  @include media-small-tablet-screen() {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.blog__text {
+  @include font-small();
+  margin-bottom: 40px;
+
+  @include media-small-tablet-screen() {
+    margin-bottom: 20px;
+  }
+}
+
+.blog__text-accent {
+  @include font-mega();
+  @include gradient-red-text();
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.blog__paragraph {
+  @include font-medium();
+  color: var(--color-main-primary);
+  margin-bottom: 20px;
+}
+
+.blog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+  counter-reset: myCounter;
+
+  @include media-phone-screen() {
+    margin-bottom: 20px;
+  }
+}
+
+.blog__item {
+  @include font-small();
+  padding-left: 15px;
+
+  &::before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    color: var(--color-accent);
+
+  }
+}
+
+.blog__wrapper__image {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @include media-phone-screen() {
+    margin-bottom: 20px;
+  }
+}
+
+.blog__text--signature {
+  @include font-xs-small();
+  color: var(--color-background-text);
+}
+
+.blog__subtitle {
+  @include font-medium();
+  color: var(--color-main-primary);
+  margin-bottom: 25px;
+}
+
+.blog__list--social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 4px solid var(--color-background-separater);
+
+  @include media-phone-screen() {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+}
+
+.blog__item--social {
+  background-color: var(--color-background) ;
+  border-radius: 12px;
+  padding: 9px;
+}

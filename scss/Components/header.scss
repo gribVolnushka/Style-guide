@@ -40,7 +40,7 @@
   gap: 10px;
 }
 
-.header__list-item {
+.header__item {
   padding-left: 20px;
   background-image: url('../../Image/Dot-separator.svg');
   background-repeat: no-repeat;
@@ -63,17 +63,16 @@
   }
 }
 
-.header__list-link {
+.header__link {
   @include font-xs-small();
   font-weight: 700;
 
   &:hover {
     color: var(--color-active-regular);
   }
-
 }
 
-.header__list-link--first {
+.header__link--first {
   color: var(--color-main-white);
 }
 
@@ -116,10 +115,13 @@
   color: var(--color-active-regular);
 }
 
-.header__path:hover {
-  fill: var(--color-active-regular);
+.header__path {
+  &:hover {
+    fill: var(--color-active-regular);
+  }
+
 }
 
-.link-current-page {
-  border-bottom: 1px solid var(--color-accent);
+.link--current-page {
+  border-bottom: 2px solid var(--color-accent);
 }

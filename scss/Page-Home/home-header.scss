@@ -24,11 +24,11 @@
 
 }
 
-.header__elem__text {
+.header__elem-text {
   background-color: transparent;
 }
 
-.header__list-link {
+.header__link {
   @include media-phone-screen() {
     color: var(--color-background-text);
   }
