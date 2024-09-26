@@ -1,0 +1,40 @@
+.header__wrapper-form {
+  grid-column: 3/5;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+
+  @include media-small-tablet-screen() {
+    grid-column: 1/5;
+    justify-content: space-between;
+  }
+}
+
+.header__form {
+  display: flex;
+}
+
+.header__elem {
+  -webkit-appearance: unset;
+
+  &:hover ~ .header__elem-text {
+    background-color: var(--color-background-text);
+    color: var(--color-main-white);
+  }
+
+  &:checked ~ .header__elem-text {
+    background-color: var(--color-accent);
+    color: var(--color-main-white);
+  }
+}
+
+.header__elem-text {
+  font-size: 1.2rem;
+  line-height: calc(14 / 12);
+  color: var(--color-background-text);
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: var(--color-main-white);
+}

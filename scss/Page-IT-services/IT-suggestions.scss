@@ -1,0 +1,58 @@
+.suggestions {
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  @include media-small-tablet-screen() {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+.suggestions__container {
+  display: flex;
+  justify-content: center;
+}
+
+.suggestions__wrapper-content {
+  width: 1092px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 4px solid var(--color-main-white);
+
+  @include media-small-tablet-screen() {
+    width: 100%;
+  }
+}
+
+.suggestions__title {
+  @include font-medium();
+  color: var(--color-main-white);
+
+  @include media-phone-screen() {
+    @include font-small-2();
+  }
+}
+.suggestions__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 60px;
+  row-gap: 20px;
+
+  @include media-small-tablet-screen() {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    column-gap: unset;
+  }
+}
+
+.suggestions__item {
+  @include font-small();
+  color: var(--color-main-white);
+  padding-left: 22px;
+  background-image: url("../../Image/dot-pink.svg");
+  background-repeat: no-repeat;
+  background-position: left 7px top 12px;
+}

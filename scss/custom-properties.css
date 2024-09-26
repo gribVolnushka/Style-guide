@@ -1,0 +1,33 @@
+:root {
+  --color-main-primary: #323264;
+  --color-main--secondary: #46466E;
+  --color-main--tertiary: #686887;
+  --color-main-white: #FFFFFF;
+  --color-main-black: #000000;
+
+  --color-accent: #F0145A;
+
+  --color-active-regular: #24A3FF;
+  --color-active-hover: #0085FF;
+  --active-color: #006CCF;
+
+  --color-background:#F5F5FA;
+  --color-background-alternative: #EDEDF7;
+  --color-background-text: #B3B3BA;
+  --color-background-separater: #E6E6F0;
+  --color-title: #4B28DE;
+
+  --color-background-hillel : #1C4280;
+  --color-background-wanna-biz: #143646;
+  --color-background-tapgerine: #F48B30;
+  --color-background-3dlook: #9E4DC3;
+  --color-background-orangeaer: #FD9339;
+  --color-background-addtelligent: #E2E2E4;
+  --color-background-clickky: #C71C36;
+  --color-background-eco-lines: #DCF3F9;
+  --color-background-infra-tec: #EAEAEA ;
+  --color-background-sity-park: #282240 ;
+  --color-background-art-print: #1D4568;
+
+
+}

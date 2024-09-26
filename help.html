@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport'
+        content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Help</title>
+  <link rel='stylesheet' href='scss/index.scss'>
+</head>
+<body>
+
+  <section class='help'>
+
+      <div class='help__wrapper-content'>
+        <form action='' class='help__form'>
+
+          <h3 class='contacts__subtitle'>
+            Ми хотіли б Вам допомогти
+          </h3>
+          <label>
+            <input class='contacts__input' type='text' name='userName' placeholder="Ім'я">
+          </label>
+
+          <textarea class='contacts__text' name='message' rows='6' placeholder='Текст повідомлення'></textarea>
+
+          <label class='contacts__text--caption' for='userTel'>
+            ЯК ВАМ ВІДПОВІСТИ?
+          </label>
+          <input class='contacts__input' id='userTel' type='number' name='userNumber' placeholder='Номер телефону' required>
+
+          <label>
+            <input class='contacts__input' type='email' name='userMail' placeholder='Чи email' required>
+          </label>
+
+          <div class='contacts__wrapper-button'>
+            <button class='button contacts__button' type='submit'>
+              Надіслати запит
+            </button>
+          </div>
+        </form>
+      </div>
+
+  </section>
+
+</body>
+</html>

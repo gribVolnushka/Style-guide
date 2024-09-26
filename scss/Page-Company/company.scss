@@ -1,0 +1,134 @@
+.company {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  @include media-small-tablet-screen() {
+    padding-top: 20px;
+  }
+
+  @include media-small-screen() {
+    padding-bottom: 30px;
+  }
+}
+
+.company__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+
+  @include media-small-tablet-screen() {
+    gap: 40px;
+  }
+
+  @include media-small-screen() {
+    gap: 20px;
+  }
+}
+
+.company__title {
+  @include font-mega();
+  @include gradient-red-text();
+  font-weight: 700;
+  width: 864px;
+
+  @include media-small-screen() {
+    width: 100%;
+    font-size: 3.6rem;
+  }
+
+  @include media-phone-screen() {
+    font-size: 3.2rem;
+  }
+}
+
+.company__list {
+  display: grid;
+  grid-template-columns: repeat(3, 413px);
+  gap: 40px;
+
+  @include media-wide-screen() {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  @include media-small-screen() {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  @include media-phone-screen() {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.company__item {
+  position: relative;
+  padding-bottom: 10px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('../../Image/command__switch.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 13px;
+    right: 0;
+  }
+
+  @include media-phone-screen() {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.company__item-wrapper {
+  @include media-phone-screen() {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.company__image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+
+  @include media-phone-screen() {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.company__text--author {
+  @include font-small-2();
+  color: var(--color-main-primary);
+  margin-bottom: 5px;
+
+  @include media-phone-screen() {
+    margin-bottom: 0;
+  }
+}
+
+.company__text--position {
+  font-size: 1.6rem;
+  line-height: calc(22 / 16);
+  color: var(--color-background-text);
+}
+
+.company__icon {
+  display: none;
+
+  @include media-phone-screen() {
+    display: block;
+    width: 32px;
+  }
+}

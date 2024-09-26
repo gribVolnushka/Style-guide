@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport'
+        content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Document</title>
+  <link rel='stylesheet' href='scss/index.scss'>
+</head>
+<body>
+
+<!--START SECTION HEADER-->
+
+<header class='header'>
+
+  <div class='container header__container'>
+
+    <a href='http://localhost:5173/home.html' class='logo'>
+      <img class='header__logo' src='Image/hlegas-logo.svg' alt='logo'>
+      <img class='header__image' src='Image/slash.svg' alt='slash'>
+      <span class='logo__text'>
+               публікації
+            </span>
+      <img class='header__image' src='Image/symbol-P.svg' alt='symbol P'>
+    </a>
+
+    <div class='header__wrapper-form'>
+      <form action='' class='header__form'>
+        <label class='header__form-caption'>
+          <input class='header__elem' type='radio' name='language' value='ukr' checked>
+          <span class='header__elem-text'>УКР</span>
+        </label>
+
+        <label class='header__form-caption'>
+          <input class='header__elem' type='radio' name='language' value='ru'>
+          <span class='header__elem-text'>RU</span>
+        </label>
+
+        <label class='header__form-caption'>
+          <input class='header__elem' type='radio' name='language' value='eng'>
+          <span class='header__elem-text'>EN</span>
+        </label>
+
+      </form>
+
+      <ul class='header__list'>
+        <li class='header__item '>
+          <a
+            href='https://www.google.com.ua/maps/place/%D0%90%D0%B4%D0%BC%D0%B8%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF.,+3,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+65000/@46.4364852,30.7392503,16z/data=!4m5!3m4!1s0x40c63396894457b7:0x7f6c5236cbcb70c8!8m2!3d46.436045!4d30.7401301?hl=ru'
+            class='header__link header__list-link--second' target='_blank'>
+            Одеса, Адміральський пр., 3
+          </a>
+        </li>
+        <li class='header__item'>
+          <a href='tel:+380503901591' class='header__link header__list-link--second' target='_blank'>
+            +38 (050) 390 15 91
+          </a>
+        </li>
+        <li class='header__item'>
+          <a href='' class='header__link header__list-link--second'>
+            <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path class='header__path'
+                    d='M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z'
+                    fill='#B3B3BA' />
+            </svg>
+
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class='header__nav'>
+      <ul class='header__nav-list'>
+        <li class='header__nav-list__item'>
+          <a class='header__nav-list__link header__nav-list__link--second' href='http://localhost:5173/about.html'>
+            о нас
+          </a>
+        </li>
+        <li class='header__nav-list__item'>
+          <a class='header__nav-list__link header__nav-list__link--second' href='http://localhost:5173/services.html'>
+            послуги
+          </a>
+        </li>
+        <li class='header__nav-list__item'>
+          <a class='header__nav-list__link header__nav-list__link--second' href='http://localhost:5173/company.html'>
+            команда
+          </a>
+        </li>
+        <li class='header__nav-list__item'>
+          <a class='header__nav-list__link header__nav-list__link--second link--current-page' href='http://localhost:5173/articles.html'>
+            публікації
+          </a>
+        </li>
+        <li class='header__nav-list__item'>
+          <a class='header__nav-list__link header__nav-list__link--second' href='http://localhost:5173/contacts.html'>
+            контакти
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+</header>
+
+<!--END SECTION HEADER-->
+
+<!--START SECTION BLOG-->
+
+<article class='blog'>
+  <div class='container blog__container'>
+
+    <div class='blog__wrapper-content'>
+      <img class='blog__image' src='Image/public__GDPR.jpg' alt='blue flag GDPR'>
+      <h1 class='blog__title'>
+        Штраф для «Корпорації добра»: що буде з Google та іншими за порушення GDPR
+      </h1>
+      <p class='blog__text--date'>
+        29 вересня
+      </p>
+
+      <p class='blog__text'>
+        21 січня Національна комісія із захисту даних Франції (СNIL) повідомила на своєму сайті, що наклала штраф на
+        Google за порушення Загального регламенту ЄС про захист даних (GDPR). Півроку знадобилося країнам ЄС для того, аби
+        зробити якісний левел-ап у розмірах штрафів за недотримання даного нормативу. До цього штрафували в основному на
+        20 000–30 000 євро, а найбільший штраф склав 400 000 євро і стосувався госпіталю в Португалії. Але цей прецедент
+        цікавий не стільки сумою штрафу, скільки жорсткістю підходів регулятора. Чому саме, спеціально для Mind пояснює
+        акціонерний партнер Axon Partners Денис Береговий.
+      </p>
+      <p class='blog__text'>
+        За що? Групові скарги на Google прилетіли до СNIL в той самий день, коли GDPR набрав чинності. Скаржники
+        повідомляли про обробку Google персональних даних користувачів без належних підстав, зокрема, з метою створення
+        персоналізованих рекламних пропозицій.
+      </p>
+
+      <p class='blog__text-accent'>
+        До уваги українських силовиків: перевірка проводилася онлайн, без обшуків, без вилучення серверів чи іншого
+        видимого для бізнесу втручання. І так можна було.
+      </p>
+
+      <p class='blog__paragraph'>
+        За результатами перевірок СNIL виявили порушення двох вимог GDPR:
+      </p>
+
+      <ol class='blog__list'>
+        <li class='blog__item'>
+          Прозорість та поінформованість користувачів про обробку персональних даних.
+        </li>
+        <li class='blog__item'>
+          Відсутність належної згоди користувачів для обробки персональних даних з метою персоналізації реклами.
+        </li>
+      </ol>
+
+      <p class='blog__text'>
+        У випадку з персоналізацією реклами Google був впевнений, що отримав згоду користувачів, бо, по-перше, при
+        створенні Google-aкаунтів користувач погоджується з Політикою конфіденційності, а по-друге, Google має розділ «Ads
+        personalization», де можна вимкнути цю функцію.
+      </p>
+      
+      <figure class='blog__wrapper__image'>
+        <img src='Image/blog__content-image.jpg' alt=''>
+        <figcaption class='blog__text--signature'>
+          Так виглядає вікно налаштувань персоналізації реклами в Google-акаунті
+        </figcaption>
+      </figure>
+
+      <p class='blog__text'>
+        Втім, CNIL так не вважає, оскільки інформація про персоналізацію реклами недостатньо чітко доноситься
+        користувачам. Як приклад, Комісія стверджує, що відповідне вікно «Персоналізації» не містить інформації про всю
+        множину Google-сервісів, які здійснюють збір і обробку персональних даних з цією метою (YouТube, Google search,
+        Play Store, Google pictures, Gmail і т. д.), а отже, користувач не може усвідомити, в яких обсягах дані
+        використовуються і як саме вони можуть комбінуватися.
+      </p>
+
+      <h3 class='blog__subtitle'>
+        Отже, пройдемося по тексту рішення СNIL
+      </h3>
+
+      <p class='blog__text'>
+        Чому Франція, а не Ірландія. Google працює в Європі через юридичну особу в Ірландії. Але справу порушив не
+        ірландський, а французький регулятор. Відбулося це от чому.
+      </p>
+      <p class='blog__text'>
+        Якщо рішення щодо обробки даних ухвалюються будь-де за межами ЄС, то діє one stop mechanism – куди скарга
+        надійшла, той орган її і розглядає. Оскільки центр прийняття рішень про обробку даних Google знаходиться в США, а
+        скарга вперше надійшла у Франції – то CNIL її і розглядав.
+      </p>
+
+      <ul class='blog__list--social'>
+        <li class='blog__item--social'>
+          <a href='' class='blog__link'>
+            <img class='blog__image-icon' src='Image/FS.svg' alt='Facebook icon'>
+          </a>
+        </li>
+        <li class='blog__item--social'>
+          <a href='' class='blog__link'>
+            <img class='blog__image-icon' src='Image/Telegram.svg' alt='Telegram icon'>
+          </a>
+        </li>
+        <li class='blog__item--social'>
+          <a href='' class='blog__link'>
+            <img class='blog__image-icon' src='Image/Instagram.svg' alt='Instagram icon'>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</article>
+
+<!--END SECTION BLOG-->
+
+<!--START PUBLICATIONS-->
+<section class='publications'>
+  <div class='container'>
+    <a href='' class='publications__link'>
+      Публікації
+      <img src='Image/arrow-blue.svg' alt='' class='publications__icon'>
+    </a>
+    <h2 class='publications__title'>
+      Рекомендуємо
+    </h2>
+
+    <ul class='publications__list'>
+      <li class='publications__item'>
+        <div class='publications__wrapper-content'>
+          <h3 class='publications__subtitle'>
+            Валютний контроль помер, хай живе валютний контроль!
+          </h3>
+          <p class='publications__text--date'>
+            14 червня
+          </p>
+          <p class='publications__text'>
+            Експерти проводять конференції, круглі столи та іншого штибу заходи на тему «лібералізація валютного
+            законодавства». Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».
+          </p>
+        </div>
+      </li>
+      <li class='publications__item'>
+        <img class='publications__image' src='Image/public__conference.jpg' alt='Conference with team'>
+        <div class='publications__wrapper-content'>
+          <h3 class='publications__subtitle'>
+            Equity associate
+          </h3>
+          <p class='publications__text--date'>
+            22 квітня
+          </p>
+          <p class='publications__text'>
+            На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені
+            казали, що якщо буду
+          </p>
+        </div>
+      </li>
+      <li class='publications__item'>
+        <img class='publications__image' src='Image/public__GDPR.jpg' alt='EU sign'>
+        <div class='publications__wrapper-content'>
+          <h3 class='publications__subtitle'>
+            Штраф для «Корпорації добра»: що буде з Google та іншими за порушення GDPR
+          </h3>
+          <p class='publications__text--date'>
+            29 вересня
+          </p>
+          <p class='publications__text'>
+            І чому стягнення у 50 млн євро може стати доленосним прецедентом За матеріалами Mind.ua 21 січня Національна
+            комісія із захисту даних.
+          </p>
+        </div>
+      </li>
+      <li class='publications__item'>
+        <img class='publications__image' src='Image/public__funnyTeam.jpg' alt='Funny team'>
+        <div class='publications__wrapper-content'>
+          <h3 class='publications__subtitle'>
+            Заповіт міленіала
+          </h3>
+          <p class='publications__text--date'>
+            19 серпня
+          </p>
+          <p class='publications__text'>
+            Що і як передаватимуть у спадщину сучасні українські музеї для наступного покоління
+          </p>
+        </div>
+      </li>
+      <li class='publications__item'>
+        <img class='publications__image' src='Image/public__Maidan.jpg' alt='Photo of Maidan'>
+      </li>
+      <li class='publications__item'>
+        <img class='publications__image' src='Image/public__childWithGuitar.jpg' alt='Child playing guitar'>
+      </li>
+    </ul>
+    <div class='publications__wrapper-background'>
+      <button class='button publications__button' type='submit'>
+        Ще публікації
+      </button>
+    </div>
+  </div>
+</section>
+<!--END PUBLICATIONS-->
+
+<!--START FOOTER-->
+<footer class='footer'>
+  <div class='container footer__container'>
+    <ul class='footer__list'>
+      <li class='footer__item footer__item--address'>
+        <a class='footer__link' href=''>
+          Одеса, Адміральський пр., 3
+        </a>
+      </li>
+      <li class='footer__item footer__item--with-dot'>
+        <a class='footer__link'
+           href='https://www.google.com.ua/maps/place/%D0%90%D0%B4%D0%BC%D0%B8%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF.,+3,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+65000/@46.4364852,30.7392503,16z/data=!4m5!3m4!1s0x40c63396894457b7:0x7f6c5236cbcb70c8!8m2!3d46.436045!4d30.7401301?hl=ru'
+           target='_blank'>
+          Подивитися на мапі
+        </a>
+      </li>
+      <li class='footer__item'>
+        <a class='footer__link' href=''>
+          <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <path class='footer__path'
+                  d='M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z'
+                  fill='#B3B3BA' />
+          </svg>
+        </a>
+      </li>
+      <li class='footer__item footer__item--with-dot'>
+        <a class='footer__link' href='tel:+380503901591' target='_blank'>
+          +38 (050) 390 15 91
+        </a>
+      </li>
+      <li class='footer__item footer__item--with-dot'>
+        <a class='footer__link' href='mailto:contact@hlegals.net' target='_blank'>
+          contact@hlegals.net
+        </a>
+      </li>
+    </ul>
+
+    <p class='footer__paragraph'>
+      © 2021 ТОВ Юридична компанія «HLEGALS»
+    </p>
+  </div>
+</footer>
+<!--END FOOTER-->
+
+<script src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js'></script>
+<script>
+  var elem = document.querySelector('.publications__list');
+  var msnry = new Masonry(elem, {
+    // options
+    itemSelector: '.publications__item',
+    columnWidth: 413,
+    gutter: 15
+  });
+</script>
+
+<script src='main.js' type='module'></script>
+
+</body>
+</html>
